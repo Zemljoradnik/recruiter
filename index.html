@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" ng-app="recruiter">
+<head>
+	<meta charset="utf-8">
+	<title>Recruiter</title>
+	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/recruiter.css">
+
+	<script src="js/lib/angular/angular.js"></script>
+	<script src="js/lib/angular-route/angular-route.js"></script>
+	<script src="js/lib/angular-resource/angular-resource.js"></script>
+	<script src="js/app/recruiter.js"></script>
+	<script src="js/app/controllers.js"></script>
+	<script src="js/app/services.js"></script>
+</head>
+<body>
+	<div id="main-menu">
+		<a href="#/positions" class="main-menu-item" id="positions">
+			<div class="main-menu-icon"></div>
+			<div class="main-menu-caption">Positions</div>
+		</a>
+		<a href="#/candidates" class="main-menu-item" id="candidates">
+			<div class="main-menu-icon"></div>
+			<div class="main-menu-caption">Candidates</div>
+		</a>
+		<a href="#/interviews" class="main-menu-item" id="interviews">
+			<div class="main-menu-icon"></div>
+			<div class="main-menu-caption">Interviews</div>
+		</a>
+		<div ng-click="showViewSubmenu()" class="main-menu-item" id="view">
+			<div class="main-menu-icon"></div>
+			<div class="main-menu-caption">View</div>
+		</div>
+	</div>
+	<div class="view-container">
+		<div ng-view class="view-frame"></div>
+	</div>
+</body>
+</html>

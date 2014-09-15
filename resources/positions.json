@@ -1,0 +1,35 @@
+[
+	{
+		"posId" : 0,
+		"name" : "Web designer",
+		"created" : "2014-09-14",
+		"phase" : "open",
+		"description" : "Senior web designer",
+		"applications" : 3,
+		"answered" : 2,
+		"interviewed" : 1,
+		"closing" : ""
+	},
+	{
+		"posId" : 1,
+		"name" : "Front-end developer",
+		"created" : "2014-09-13",
+		"phase" : "open",
+		"description" : "Senior front-end developer",
+		"applications" : 4,
+		"answered" : 2,
+		"interviewed" : 0,
+		"closing" : "2014-09-21"
+	},
+	{
+		"posId" : 2,
+		"name" : "Back-end developer",
+		"created" : "2014-09-10",
+		"phase" : "open",
+		"description" : "Junior back-end developer",
+		"applications" : 7,
+		"answered" : 6,
+		"interviewed" : 4,
+		"closing" : "2014-09-21"
+	}
+]

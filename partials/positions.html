@@ -1,0 +1,18 @@
+<div id="positions-header">
+	<div class="position-phase position-header-item">State</div>
+	<div class="position-name position-header-item">Position</div>
+	<div ng-hide="showCreated" class="position-created position-header-item">Created</div>
+	<div ng-hide="showApplications" class="position-applications position-header-item">Applications</div>
+	<div ng-hide="showAnswered" class="position-answered position-header-item">Answered</div>
+	<div ng-hide="showInterviewed" class="position-interviewed position-header-item">Interviewed</div>
+	<div ng-hide="showClosing" class="position-closing position-header-item">Closing</div>
+</div>
+<div ng-repeat="position in positions | filter:phase | orderBy:order" class="positions-list-item" id="position_{{position.posId}}">
+	<div class="position-phase position-list-item-item phase-{{position.phase}}"></div>
+	<div class="position-name position-list-item-item">{{position.name}}</div>
+	<div ng-hide="showCreated" class="position-created position-list-item-item">{{position.created}}</div>
+	<div ng-hide="showApplications" class="position-applications position-list-item-item">{{position.applications}}</div>
+	<div ng-hide="showAnswered" class="position-answered position-list-item-item">{{position.answered}}</div>
+	<div ng-hide="showInterviewed" class="position-interviewed position-list-item-item">{{position.interviewed}}</div>
+	<div ng-hide="showClosing" class="position-closing position-list-item-item">{{position.closing}}</div>
+</div>
